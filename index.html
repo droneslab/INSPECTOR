@@ -242,37 +242,46 @@ Our method improves feature-matching performance.
 </style>
 
 <!-- Luna-1 -->
-<section class="section hero">
+<!-- End Luna-1 -->
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column"><h2 class="title is-3">The Davis Dataset</h2>
+      <div class="column"><h2 class="title is-3">Simulation</h2>
         <div class="content has-text-justified">
-          <p>
-            We evaluate PIXER aided visual odometry on a custom dataset, named "Davis", collected using a ZED 2i camera + Mosaic X5 GNSS on a Boston Dynamics Spot Quadruped. Results in Table below show superior estimation performance with mean RMSE improvement of 34% and mean feature reduction of 41%.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-            <img style="width:100%; padding-right: 15px;" src="static/images/pixer-real-robot3.png"/>
-            <!-- <img style="width:49%; padding-right: 15px; padding-bottom: 2px;" src="static/images/nav_frames.png"/>  -->
+          <h6>
+            TODO
+          </h6>
+          <img style="width:100%;" src="static/images/pixer-results.png">
+          
+          <!-- <h6>
+            and maintains this alignment across different environment features:
+          </h6>
+          <img style="width:100%;" src="static/images/q2.png"> -->
+          
+          <!-- <h6>
+            MARs can also converge challenging data, where traditional methods fail:
+          </h6> -->
+          <!-- <img style="width:100%;" src="static/images/q3.png"> -->
+
+          <!-- <h6>
+            During training, MARs (bottom) leads to greater stability and faster, more uniform convergence against 
+            rotational equivarant and spatial attention layers (RIC CA, top):
+          </h6> -->
+          <!-- <img style="width:100%;" src="static/images/q4.png"> -->
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End Luna-1 -->
 
 <!-- Results -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column"><h2 class="title is-3">Results</h2>
+      <div class="column"><h2 class="title is-3">Preliminary Results</h2>
         <div class="content has-text-justified">
           <h6>
-            Visual odometry (VO) performance results. Features when filtered using PIXER contribute to a lower RMSE (31% on average
-            across all datasets) and frame-to-frame execution time for VO estimation (0.63% despite the inclusion of model inference). This enables
-            using lighter, faster features like Shi-Tomasi while achieving performance better than SIFT (e.g., KITTI & Davis). We see a considerable
-            reduction in the number of keypoints in all datasets by roughly 49% (KP% shows % reduction while KPmean shows the mean number mean
-            of keypoints extracted per image). mean(FArea) is the average percentage of pixels masked with F.
+            TODO
           </h6>
           <img style="width:100%;" src="static/images/pixer-results.png">
           
