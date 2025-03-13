@@ -207,9 +207,27 @@ during the real-world deployment of our autonomous pipeline.
       <div class="column"><h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p>
-            The training of PIXER is a three-step process. First, we train a network with a general understanding of interestingness (i.e., feature point detection) where we make use of SiLK in this work (top left). Next, we convert this model to a Bayesian Neural Network (BNN) and train again using the addition of probabilistic losses (e.g., KL Divergence, top middle). Finally, we train a specialized uncertainty head using feature variance computed by Monte Carlo supervision from the BNN (top right). The PIXER inference model is then the joint feature-point probability and uncertainty networks (bottom middle). The combination of pixel-wise probability and uncertainty forms our definition of featureness F (bottom right), used to describe the general utility of the visual information.
+            NAV-Stack: This module incorporates a context-aware,
+learning-based architecture designed to generate high-
+level command velocities and predict stable gaits. It
+enables the legged robot to navigate safely and stably
+from street parking down a steep 7-meter slope to the
+culvert for inspection. The model trained in this module
+has already been tested in simulation and has shown
+promising results compared to the baseline controllers.
+We present these results in Section.
+
+Inspection-Stack: We develop an active illumination
+control scheme named Inspection-Stack which uses
+online Bayesian optimization to find optimal external
+light intensity (P ) and exposure-time (∆t). We experi-
+mentally validate our method within a challenging sub-
+terranean environment: a 66m long, 1m diameter culvert
+beneath the Erie Canal. Extremely low ambient light and
+repeating textures make visual estimation challenging.
+Our method improves feature-matching performance.
           </p>
-          <img style="width:100%;" src="static/images/pixer-network7.png">
+          <img style="width:100%;" src="static/images/arch.png">
         </div>
       </div>
     </div>
