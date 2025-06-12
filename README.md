@@ -1,4 +1,1 @@
-# CANAL-INSPECTION
-
-TODO: Add PANOS branch
-TODO: ADD NightHawk branch
+[Canals_IMPACT_WFR-3_compressed.pdf](https://github.com/user-attachments/files/20714211/Canals_IMPACT_WFR-3_compressed.pdf)
